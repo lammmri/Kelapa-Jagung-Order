@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Kelapa & Jagung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌴 Pemesanan Kelapa & Jagung 🌽</h1>
+        <p>Segar langsung dari petani!</p>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Kelapa">
+            <h2>Kelapa</h2>
+            <p>Rp 5.000 per buah</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Jagung">
+            <h2>Jagung</h2>
+            <p>Rp 3.000 per kg</p>
+        </div>
+    </section>
+
+    <section class="order-form">
+        <h2>Pesan Sekarang</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label>Nama:</label>
+            <input type="text" name="nama" required>
+            <label>Produk:</label>
+            <select name="produk">
+                <option value="kelapa">Kelapa</option>
+                <option value="jagung">Jagung</option>
+            </select>
+            <label>Jumlah:</label>
+            <input type="number" name="jumlah" required>
+            <label>No HP:</label>
+            <input type="text" name="nohp" required>
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Pemesanan Kelapa & Jagung</p>
+    </footer>
+</body>
+</html>
